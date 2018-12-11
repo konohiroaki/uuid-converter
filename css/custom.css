@@ -11,3 +11,12 @@ footer i {
     margin-left: 0.5em;
     margin-top: 2px;
 }
+
+.exchange {
+    transform: rotate(90deg);
+    color: #404040;
+}
+
+.row {
+    margin-bottom: 0;
+}

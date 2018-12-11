@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+          integrity="sha256-tKn8A2U9uuN5rPr3gh4A9FYMJkarrzLVyks7aS/ZfBU=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UUID Converter</title>
+</head>
+
+<body class="grey">
+<header>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            <a href="." class="brand-logo">UUID Converter</a>
+        </div>
+    </nav>
+</header>
+<main id="app">
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s12 grey lighten-3">
+                <div class="card-title center-align">{{b16.title}}</div>
+                <input type="text" :title="b16.title" v-model="b16.value" @input="updateB64">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 grey lighten-3">
+                <div class="card-title center-align">{{b64.title}}</div>
+                <input type="text" :title="b64.title" v-model="b64.value" @input="updateB16">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="fixed-action-btn">
+        <a href="https://github.com/konohiroaki/uuid-converter">
+            <i class="fab fa-github fa-7x"></i>
+        </a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"
+        integrity="sha256-TaLceMwjWRqe4yhbqPOJH6V7UGt5AvvdNfpaIXJWbFU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"
+        integrity="sha256-W9FML0cw6SfScX3k0Z8iTWhaZGSEUrR3R3KWfRA6lnI=" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+footer i {
+    color: #404040 !important;
+}
+
+.input-field input {
+    font-family: "Courier New", monospace;
+}
+
+.brand-logo {
+    font-family: 'Cutive Mono', monospace;
+    margin-left: 0.5em;
+    margin-top: 2px;
+}
